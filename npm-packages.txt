@@ -1,0 +1,3 @@
+npm install
+npm install lucide-vue-next
+npm install tailwindcss @tailwindcss/vite

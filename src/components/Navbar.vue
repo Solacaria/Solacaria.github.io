@@ -28,6 +28,7 @@
 </template>
 
 <script setup>
+import {Menu, X} from 'lucide-vue-next';
 import { ref, onMounted } from 'vue';
 
 const props = defineProps({

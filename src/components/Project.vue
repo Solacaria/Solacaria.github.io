@@ -55,7 +55,7 @@
 
 <script setup>
 import { ref } from 'vue';
-import { Menu, X, ChevronDown, ExternalLink, Github, Mail, Linkedin, Twitter, MapPin } from 'lucide-vue-next';
+import { ExternalLink, Github } from 'lucide-vue-next';
 
 const projects = ref([
   /* Template

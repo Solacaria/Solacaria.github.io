@@ -7,16 +7,14 @@
             <p class="text-gray-400">Junior Software Engineer</p>
           </div>
           <div class="flex space-x-4">
-            <a href="#" class="text-gray-400 hover:text-white">
+            <a href="https://www.linkedin.com/in/jonny-%C3%A5hslund-b3823a283/" class="text-gray-400 hover:text-white">
               <Linkedin class="h-5 w-5" />
             </a>
-            <a href="#" class="text-gray-400 hover:text-white">
+            <a href="https://github.com/Solacaria" class="text-gray-400 hover:text-white">
               <Github class="h-5 w-5" />
             </a>
-            <a href="#" class="text-gray-400 hover:text-white">
-              <Twitter class="h-5 w-5" />
-            </a>
-            <a href="#" class="text-gray-400 hover:text-white">
+            
+            <a href="mailto:jonny.ahslund@live.se" class="text-gray-400 hover:text-white">
               <Mail class="h-5 w-5" />
             </a>
           </div>
@@ -29,5 +27,5 @@
 </template>
 
 <script setup>
-import { Menu, X, ChevronDown, ExternalLink, Github, Mail, Linkedin, Twitter, MapPin } from 'lucide-vue-next';
+import { Github, Linkedin, Mail } from 'lucide-vue-next';
 </script>

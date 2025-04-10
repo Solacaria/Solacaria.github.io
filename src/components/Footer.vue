@@ -7,14 +7,24 @@
             <p class="text-gray-400">Junior Software Engineer</p>
           </div>
           <div class="flex space-x-4">
-            <a href="https://www.linkedin.com/in/jonny-%C3%A5hslund-b3823a283/" class="text-gray-400 hover:text-white">
+            <a href="https://www.linkedin.com/in/jonny-%C3%A5hslund-b3823a283/" 
+              class="text-gray-400 hover:text-white"
+              target="_blank"
+              rel="noopener noreferrer">
               <Linkedin class="h-5 w-5" />
             </a>
-            <a href="https://github.com/Solacaria" class="text-gray-400 hover:text-white">
+            
+            <a href="https://github.com/Solacaria" 
+              class="text-gray-400 hover:text-white"
+              target="_blank"
+              rel="noopener noreferrer">
               <Github class="h-5 w-5" />
             </a>
             
-            <a href="mailto:jonny.ahslund@live.se" class="text-gray-400 hover:text-white">
+            <a href="mailto:jonny.ahslund@live.se" 
+              class="text-gray-400 hover:text-white"
+              target="_blank"
+              rel="noopener noreferrer">
               <Mail class="h-5 w-5" />
             </a>
           </div>

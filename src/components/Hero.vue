@@ -1,5 +1,5 @@
 <template>
-    <section id="about" class="py-16 md:py-24 bg-white bg-gradient-to-r from-gray-300 to-gray-900" >
+    <section id="about" class="py-16 md:py-24 bg-white bg-gradient-to-r from-gray-500 to-gray-900 md:from-gray-300 md:to-gray-900" >
       <div class="container mx-auto px-4">
         <div class="flex flex-col md:flex-row items-center">
           <div class="md:w-1/2 mb-8 md:mb-0 m-4">

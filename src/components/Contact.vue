@@ -39,10 +39,20 @@
                       Solacaria @ Github
                     </a>
                   </div>
-                  <div class="flex items-center">
+                  <!-- <div class="flex items-center">
                     <MapPin class="h-5 w-5 text-emerald-600 mr-3" />
                     <span class="text-gray-200">Tierp, Sweden</span>
-                  </div>
+                  </div> -->
+                  <a
+                    href="https://www.google.com/maps/search/?api=1&query=Tierp,+Sweden"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="flex items-center"
+                  >
+                    <MapPin class="h-5 w-5 text-emerald-600 mr-3" />
+                    Tierp, Sweden
+                  </a>
+
                 </div>
               </div>
   

@@ -16,7 +16,12 @@
             </div>
             <div class="p-6">
               <h3 class="font-bold text-xl mb-2 text-gray-100">{{ project.title }}</h3>
-              <p class="text-gray-300 mb-4">{{ project.description }}</p>
+              <p class="text-gray-300 mb-4">
+                {{ project.description }}
+                <a :href="project.linkUrl" class="text-blue-400 underline" target="_blank">
+                  <br>{{ project.linkText }}
+                </a>
+              </p>
               <div class="flex flex-wrap gap-2 mb-4">
                 <span
                   v-for="(tech, tIndex) in project.technologies"
@@ -60,11 +65,16 @@ import { ref } from 'vue';
 import { ExternalLink, Github } from 'lucide-vue-next';
 
 import cookbookImg from '../assets/Kokboken-front.jpg';
+import guildBankImg from '../assets/GuildBankViewer-front.jpg';
+import discordBotImg from '../assets/Discord-bot-img.png';
+
 const projects = ref([
   /* Template
   {
     title: '',
     description: '',
+    linkText: '',
+    linkUrl: '',
     image: 'https://via.placeholder.com/600x400',
     technologies: ['', '', '',],
     demo: 'https://example.com/demo1',
@@ -79,7 +89,27 @@ const projects = ref([
     demo: '',
     github: 'https://github.com/Solacaria/PP-MAUI-Cookbook-WIP'
   },
+  {
+    title: "Guild Bank Viewer",
+    description: "A website to view data and a World of Warcraft addon to export the data." +
+      "\nDisplays the data from World of Warcraft guild bank in tables and allows you to search tabs, players and more." +
+      "\nThe website is built with Vue.js, while the addon is written in Lua.",
+    image: guildBankImg,
+    technologies: ['Vue.js', 'Lua', 'CSS', 'HTML', 'JavaScript' ],
+    demo: 'https://guild-bank-viewer.vercel.app/',
+    github: 'https://github.com/Solacaria/Guild_Bank_Viewer'
+  },
+  {
+    title: "Discord bot",
+    description: "A bot to help find groups of players for ingame activities in world of warcraft." +
+      "\nI dont take full credit for this bot, i have however made some major changes to make it fit and work for our specific discord needs.",
+    linkText: "Original code by Baddadan/Kashual for NoP EU.",
+    linkUrl: "https://bit.ly/3ZrVj7C",
+    image: discordBotImg,
+    technologies: ['JavaScript' ],
+    demo: '',
+    github: 'https://github.com/Solacaria/Dungeon-Buddy-master'
+  }
   
 ]);
-
 </script>

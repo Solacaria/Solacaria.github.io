@@ -1,16 +1,18 @@
 <template>
-    <section id="projects" class="py-16 md:py-24 bg-gray-900">
-      <div class="container mx-auto px-4">
-        <h2 class="text-3xl font-bold text-center mb-12 text-gray-100">My Projects</h2>
-        
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          <div v-for="(project, index) in projects" :key="index" class="bg-gray-800 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow">
-            <div class="h-48 bg-gray-700 relative">
-              <img
-                :src="project.image"
-                :alt="project.title"
-                class="w-full h-full object-cover"
-              />
+  <section id="projects" class="py-16 md:py-24 bg-gray-900">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center mb-12 text-gray-100">My Projects</h2>
+
+      <div class="flex flex-wrap justify-center gap-8">
+        <div
+          v-for="(project, index) in projects" :key="index"
+            class="w-full md:w-[48%] lg:w-[30%] bg-gray-800 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow">
+          <div class="h-48 bg-gray-700 relative">
+            <img
+              :src="project.image"
+              :alt="project.title"
+              class="w-full h-full object-cover"
+            />
             </div>
             <div class="p-6">
               <h3 class="font-bold text-xl mb-2 text-gray-100">{{ project.title }}</h3>
@@ -57,6 +59,7 @@
 import { ref } from 'vue';
 import { ExternalLink, Github } from 'lucide-vue-next';
 
+import cookbookImg from '../assets/Kokboken-front.jpg';
 const projects = ref([
   /* Template
   {
@@ -69,13 +72,14 @@ const projects = ref([
   },
   */
   {
-    title: 'Digital cookbook',
-    description: 'Add, remove, edit and save recipes with ease. Has search function for tags and title. Follows the MVVC pattern',
-    image: '../src/assets/test_image.png',
+    title: 'Digital cookbook (WIP)',
+    description: 'First ever solo project to test myself. Features: Add, remove, edit and save recipes with ease. Has search function for tags and title. Follows the MVVC pattern.',
+    image: cookbookImg,
     technologies: ['MAUI', 'C#', 'XAML', ],
     demo: '',
     github: 'https://github.com/Solacaria/PP-MAUI-Cookbook-WIP'
   },
+  
 ]);
 
 </script>

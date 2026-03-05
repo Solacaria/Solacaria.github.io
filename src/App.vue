@@ -20,7 +20,7 @@ import Footer from './components/Footer.vue';
 import Navbar from './components/Navbar.vue';
 
 // Disables project section
-const hasProjects = false;
+const hasProjects = true;
 </script>
 
 <style>

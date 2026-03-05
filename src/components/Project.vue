@@ -19,7 +19,7 @@
               <p class="text-gray-300 mb-4">
                 {{ project.description }}
                 <a :href="project.linkUrl" class="text-blue-400 underline" target="_blank">
-                  <br>{{ project.linkText }}
+                  <br></br>{{ project.linkText }}
                 </a>
               </p>
               <div class="flex flex-wrap gap-2 mb-4">

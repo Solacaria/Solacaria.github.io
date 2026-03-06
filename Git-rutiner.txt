@@ -1,0 +1,17 @@
+
+# Kör följande kommandon i terminalen för att bygga och uppdatera webbplatsen:
+
+# Bygger appen
+npm run build
+
+# Lägger till ändringarna i stage
+git add .
+
+# Lägger meddelande för commit
+git commit -m "Update site"
+
+# Pushar ändringarna till main branchen
+git push origin main
+
+# Pushar ändringarna till gh-pages branchen
+git subtree push --prefix dist origin gh-pages

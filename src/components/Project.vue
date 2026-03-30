@@ -67,6 +67,7 @@ import { ExternalLink, Github } from 'lucide-vue-next';
 import cookbookImg from '../assets/Kokboken-front.jpg';
 import guildBankImg from '../assets/GuildBankViewer-front.jpg';
 import discordBotImg from '../assets/Discord-bot-img.png';
+import idleVikingVillageImg from '../assets/IdleVikingVillage.jpg'
 
 const projects = ref([
   /* Template
@@ -75,20 +76,13 @@ const projects = ref([
     description: '',
     linkText: '',
     linkUrl: '',
-    image: 'https://via.placeholder.com/600x400',
+    image: '',
     technologies: ['', '', '',],
-    demo: 'https://example.com/demo1',
-    github: 'https://github.com/yourusername/project1'
+    demo: '', // Webpage or test area
+    github: ''
   },
   */
-  {
-    title: 'Digital cookbook (WIP)',
-    description: 'First ever solo project to test myself. Features: Add, remove, edit and save recipes with ease. Has search function for tags and title. Follows the MVVC pattern.',
-    image: cookbookImg,
-    technologies: ['MAUI', 'C#', 'XAML', ],
-    demo: '',
-    github: 'https://github.com/Solacaria/PP-MAUI-Cookbook-WIP'
-  },
+ 
   {
     title: "Guild Bank Viewer",
     description: "A website to view data and a World of Warcraft addon to export the data." +
@@ -109,7 +103,26 @@ const projects = ref([
     technologies: ['JavaScript' ],
     demo: '',
     github: 'https://github.com/Solacaria/Dungeon-Buddy-master'
-  }
+  },
+  {
+    title: 'Idle viking village game',
+    description: 'Idle 2D game to learn the basics of Unity.' + 
+      '\n Finding out the best practice and architecture of files and how to solve more complex problems.',
+    linkText: '',
+    linkUrl: '',
+    image: idleVikingVillageImg,
+    technologies: ['C#', 'Unity'],
+    demo: '',
+    github: 'https://github.com/Solacaria/Idle-Viking-Village'
+  },
+  {
+    title: 'Digital cookbook (WIP)',
+    description: 'First ever solo project to test myself. Features: Add, remove, edit and save recipes with ease. Has search function for tags and title. Follows the MVVC pattern.',
+    image: cookbookImg,
+    technologies: ['MAUI', 'C#', 'XAML', ], 
+    demo: '',
+    github: 'https://github.com/Solacaria/PP-MAUI-Cookbook-WIP' 
+  },
   
 ]);
 </script>

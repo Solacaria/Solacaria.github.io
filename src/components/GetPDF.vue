@@ -34,8 +34,8 @@
   
   const downloadCv = () => {
     const file = selectedLanguage.value === 'en'
-      ? '/Jonny_Åhslund_CV_eng.pdf'
-      : '/Jonny_Åhslund_CV_swe.pdf'
+      ? '/Jonny_CV_Eng.pdf'
+      : '/Jonny_CV_Swe.pdf'
   
     const link = document.createElement('a')
     link.href = file
